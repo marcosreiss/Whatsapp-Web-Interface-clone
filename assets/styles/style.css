@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+    --cor-primaria: #111b21;
+    --cor-secundaria: #00a884;
+    --cor-terciaria: #5d766f;
+    --cor-quaternaria: #5c7ba3;
+    --cor-sextenaria: #222e35;
+    --btn-color: #111821;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", Arial, sans-serif;
+    outline: none;
+}
+
+body{
+    min-width: 1000px;
+    max-height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+#contacts-bar{
+    height: 100vh;
+    width: 30%;
+    background-color: #111b21;
+    display: flex;
+    flex-direction: column;
+}
+
+#contacts-bar header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    background-color: #222e35;
+    border-right: 1px solid #5d766f;
+}
+
+.contact-buttons{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-buttons button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#contacts-bar img{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+#contacts-bar section{
+    width: 90%;
+    margin: 20px auto;
+    padding: 5px 0 5px 10px;
+    background-color: #222e35;
+    border-radius: 5px;
+    color: #667781;
+}
+
+#contacts-bar section input{
+    margin-left: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: transparent;
+    border: none;
+
+}
+
+#contacts-bar section input::placeholder{
+    color: #667781;
+}
+
+#contacts-bar main{
+    color: white;
+    overflow: auto;
+    width: 100%;
+}
+
+/* Estilo da barra de rolagem */
+#contacts-bar main::-webkit-scrollbar,
+#content::-webkit-scrollbar {
+    width: 10px; /* largura da barra de rolagem */
+}
+
+/* Estilo da faixa da barra de rolagem */
+#contacts-bar main::-webkit-scrollbar-track,
+#content::-webkit-scrollbar-track {
+    background: #f1f1f1; /* cor de fundo da faixa */
+}
+
+/* Estilo do polegar da barra de rolagem */
+#contacts-bar main::-webkit-scrollbar-thumb,
+#content::-webkit-scrollbar-thumb {
+    background: #888; /* cor de fundo do polegar */
+    border-radius: 5px; /* borda arredondada do polegar */
+}
+
+/* Estilo do polegar da barra de rolagem quando hover */
+#contacts-bar main::-webkit-scrollbar-thumb:hover,
+#content::-webkit-scrollbar-thumb:hover {
+    background: #555; /* altera a cor de fundo do polegar quando hover */
+}
+
+.contact-item{
+    display: flex;
+    align-items:center; 
+    gap: 20px;
+    transition: all .1s;
+}
+
+.contact-item:hover{
+    background-color: #222e35;
+    border: none;
+}
+
+.name{
+    display: block;
+    border-top: 0.5px solid #222e35;
+    flex-grow: 1;
+    padding: 16px 0;
+}
+
+#funcional{
+    cursor: pointer;
+}/*unico contato iterativo*/
+
+#presentation{
+    height: 100vh;
+    background-color: var(--cor-sextenaria);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    color: white;
+    font-weight: 300;
+    
+}
+
+#presentation img{
+    width: 150px;
+    border-radius: 7px;
+}
+
+#presentation h1{
+    font-weight: 300;
+}
+
+#presentation p{
+    font-size: 13px;
+    width: 500px;
+    text-align: center;
+}
+
+#presentation button{
+    padding: 15px;
+    border: none;
+    border-radius: 40px;
+    width: 250px;
+    background-color: #00a884;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#presentation button:hover{
+    filter: brightness(1.2);
+}
+
+#presentation button a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--btn-color);
+}
+
+#presentation span{
+    font-size: 13px;
+    color: #667781;
+    margin-top: 30px;
+}
+
+#conversation{
+    display: none;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    background-image: url('../images/wallpaper.jpg');
+    width: 70%;
+    height: 100vh;
+    position: relative;
+}
+
+#conversation header{
+    background-color: var(--cor-sextenaria);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.1px solid #3c4c55;
+    align-self: flex-start;
+    width: 100%;
+
+}
+
+#conversation header .profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 0 5px 20px;
+}
+
+#conversation header img{
+    width: 44px;
+    border-radius: 50%;
+}
+
+#conversation .header-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    padding-right: 20px;
+}
+
+.header-buttons button{
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+#video-button{
+    color: #3c4c55;
+}
+
+#content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: auto;
+    padding: 15px 0 ;
+}
+
+.message{
+    background-color: #222e35;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    gap: 5px;
+    max-width: 40%;
+    text-wrap: wrap;
+}
+
+.message p{
+    align-self: flex-start;
+    margin-bottom: 10px;
+    margin-right: 3px;  
+}
+
+.your-message{
+    align-self: flex-start;
+    margin-left: 25px;
+}
+
+.my-message{
+    align-self: flex-end;
+    margin-right: 25px;
+    background-color: #105c4c;
+}
+
+.sent-time{
+    color: #5d766f;
+    font-size: 13px;
+    align-self: flex-end;
+}
+
+#main-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--cor-sextenaria);
+    border-top: 1px solid #3c4c55;
+    align-self: flex-end;
+    width: 100%;
+}
+
+#main-input input{
+    border: none;
+    color: white;
+    background-color: #3c4c55;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+#main-input input::placeholder{
+    color: rgb(182, 179, 179);
+}
+
+#main-input .button{
+    font-size: 25px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
