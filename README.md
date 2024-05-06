@@ -1,4 +1,4 @@
-# WhatsApp Interface Clone
+# WhatsApp Web Interface Clone
 
 Este é um projeto de clone da interface do WhatsApp desenvolvido utilizando HTML, CSS e JavaScript puro.
 
