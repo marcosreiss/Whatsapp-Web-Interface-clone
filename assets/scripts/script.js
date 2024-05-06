@@ -1,9 +1,9 @@
 // Seleciona os elementos do DOM
-const presentation = document.getElementById('presentation')
-const conversation = document.getElementById('conversation')
-const teclado = document.getElementById('teclado')
-const enviar = document.getElementById('send-button')
-const chat = document.getElementById('content')
+const presentation = document.getElementById('presentation') //tela inicial
+const conversation = document.getElementById('conversation') //tela do chat
+const teclado = document.getElementById('teclado') //input de enviar mensagens
+const enviar = document.getElementById('send-button') //botão de enviar mensagens
+const chat = document.getElementById('content') // conteudo do chat
 
 // Seleciona todos os elementos com a classe 'sent-time' para exibir a hora de envio das mensagens
 const horaEnvio = document.querySelectorAll('.sent-time');
