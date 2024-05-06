@@ -14,8 +14,8 @@ Este é um projeto de clone da interface do WhatsApp desenvolvido utilizando HTM
 2. **Hora das Mensagens:**
    - A hora das mensagens é exibida como a hora atual do sistema.
 
-3. **Fechar (Tecla Esc):**
-   - É possível fechar o aplicativo pressionando a tecla "Esc".
+3. **Fechar Conversa (Tecla Esc):**
+   - É possível fechar a conversa pressionando a tecla "Esc".
 
 4. **Enviar Mensagem:**
    - Mensagens podem ser enviadas pressionando a tecla "Enter" ou clicando no botão de enviar.
