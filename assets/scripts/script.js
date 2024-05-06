@@ -12,8 +12,11 @@ const horaEnvio = document.querySelectorAll('.sent-time');
 const agora = new Date();
 const hora = agora.getHours();
 const minutos = agora.getMinutes();
-const stringHora = `${hora}:${minutos}`
-
+if(minutos < 10){
+     stringHora = `${hora}:0${minutos}`
+} else{
+     stringHora = `${hora}:${minutos}`
+}
 // Define a hora de envio para cada elemento com a classe 'sent-time'
 document.addEventListener('DOMContentLoaded', function(){
     horaEnvio.forEach(element => {
